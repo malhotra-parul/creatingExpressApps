@@ -8,11 +8,17 @@ const options = {
 }
 
 //Method  1  - using function callbacks
-mongoose.connect(mongoURI, options, function(err){
-    if(err){
-        throw err;
-    }
-    console.log("Successfully connected to mongodb!");
-});
+// mongoose.connect(mongoURI, options, function(err){
+//     if(err){
+//         throw err;
+//     }
+//     console.log("Successfully connected to mongodb!");
+// });
 
 //MEthod 2 - With promises
+mongoose.connect(mongoURI, options)
+    .then(()=> {
+        console.log("Successfully connected to mongo");
+    }, err => {
+        console.log("Something went wrong with mongo!");
+    });
