@@ -1,4 +1,4 @@
-#  Exploring Whatsapp Api for Click to Chat feature
+#  Exploring Whatsapp Api's **Click to Chat** feature
 
 Implemented a basic expressJs app which uses Whatsapp api to send a message to any number.
 
