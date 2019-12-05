@@ -26,7 +26,7 @@ const options = {
 //MEthod 3 - async await
 const dbConnect = async() => {
     try{
-        await mongoose.connect(mongoURI);
+        await mongoose.connect(mongoURI, options);
         console.log("Successfully connected!");
     }
     catch(err){

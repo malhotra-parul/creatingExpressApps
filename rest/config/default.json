@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb://localhost:27017/rest"
+    "mongoURI": "mongodb+srv://mdbuser:zPodrMJ2qVKBrd0M@parulcluster-o955b.gcp.mongodb.net/test?retryWrites=true&w=majority"
 
 }
