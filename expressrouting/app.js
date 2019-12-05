@@ -13,6 +13,12 @@ app.use('/user', userRoute);
 app.use('/admin', adminRoute);
 app.use('/manager', managerRoute);
 
+//for all the api methods
+app.all("/all/:username", (req, res, next) => {
+    console.log(req.params);
+    res.send("hello from all!");
+});
+
 app.get('/', (req, res) => {
     res.send("Test");
 });
@@ -21,6 +27,8 @@ app.post("/", (req, res) => {
     console.log(req.body);
     res.send("Done");
 
-})
+});
+
+
 
 app.listen(port, () => console.log(`Server started on ${port}`));
