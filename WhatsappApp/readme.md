@@ -4,4 +4,4 @@ Implemented a basic expressJs app which uses Whatsapp api to send a message to a
 
 > Append country code (91) for India.
 
-Click [here](https://whatsappapi.herokuapp.com/) to explore the app.
+Click [here](https://whatsappapi.herokuapp.com/) to try the app.
