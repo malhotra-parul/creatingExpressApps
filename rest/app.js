@@ -6,7 +6,6 @@ const userRoute = require('./routes/user')
 const dbConnect = require('./dbConnect');
 app.use(express.json({extended: false}));
 app.use("/user", userRoute);
-
 app.get("/", (req, res)=>{
     res.send("From the rest api");
 })
