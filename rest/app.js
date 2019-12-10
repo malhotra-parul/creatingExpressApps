@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port =  process.env.PORT || 7700;
+const port =  7700;
 const userRoute = require('./routes/user')
 //exporting dbConnect
 const dbConnect = require('./dbConnect');
