@@ -1,7 +1,7 @@
 //Using Mongoose documentation
 const mongoose = require('mongoose');
 const config = require('config');
-const mongoURI = config.get("mongoURI");
+const mongoURI = config.get("mongoURI"); //mongoURI defined in default.json
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology:true
