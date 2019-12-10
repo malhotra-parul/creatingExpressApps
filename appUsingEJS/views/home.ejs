@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <style type="text/css" media="screen"> 
+            body { 
+                background-color: skyblue; 
+                text-decoration-color: white; 
+                font-size:3em;  
+            } 
+        </style> 
+       
+    </head>
+    <body>
+        <centre>This is our home page.</centre> 
+        <p>Welcome, <%=data.name%></p>
+        <ul>
+            My hobbies are :
+            <%data.hobbies.forEach((item)=>{%>
+                <li><%=item%></li>
+                     <%});%>
+        </ul>
+    </body>
+</html>
